@@ -1,6 +1,6 @@
 require 'nokogiri'
 require 'open-uri'
-require 'pry'
+#require 'pry'
 
 require_relative './course.rb'
 
@@ -21,7 +21,7 @@ def make_courses
     course.title = post.css("h2").text
     course.schedule = post.css(".date").text
     course.description = post.css("p").text
-    binding.pry
+  #  binding.pry
   end
 end
 
